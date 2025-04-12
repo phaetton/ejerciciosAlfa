@@ -14,7 +14,6 @@
             --color-texto-primario: rgb(2, 85, 2);
             --color-texto-secundario: rgb(58, 38, 0);
             --color-activo: rgb(254, 211, 255);
-            --color-boton: #4CAF50;
         }
 
         body {
@@ -85,6 +84,7 @@
             background-color: var(--color-primario);
             padding: 10px;
             border-radius: 10px;
+            text-align: center;
         }
 
         footer {
@@ -101,51 +101,6 @@
             background-color: var(--color-activo);
             color: rgb(66, 49, 0);
         }
-
-
-        .info {
-            background-color: #f5e7d5;
-            padding: 15px;
-            border-left: 5px solid #a04916;
-            margin-bottom: 20px;
-        }
-
-
-        form {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .form-group {
-            width: 100%;
-            margin-bottom: 15px;
-            margin-right: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        
-        input,
-        textarea {
-            width: 100%;
-            padding: 20px 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            }
-            
-
-        button {
-            width: 100%;
-            background-color: var(--color-boton);
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        } 
     </style>
 </head>
 
@@ -162,43 +117,11 @@
 
     <main>
         <article>
-            <h2>Información de contacto</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maxime, dignissimos ipsum at eligendi
-                voluptas explicabo quibusdam ullam, obcaecati in dolorem iure cumque laboriosam voluptate architecto
-                doloremque? Praesentium, magnam ipsa!.</p>
-            <p class="info"><b>Dirección:</b> Algún lugar del país Vasco, España</p>
-            <p class="info"><b>Teléfono:</b> 123 456 789</p>
-            <p class="info"><b>Email:</b> info@clinicaveterinaria.net</p>
-            <p class="info"><b>Horario:</b> Lunes a Viernes de 9:00 a 13:00, Sábados de 10:00 a 12:00</p>
-        </article>
-
-        <article>
-            <h2>Formulario de contacto</h2>
-            <form>
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" id="asunto" name="asunto" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                </div>
-
-                <button type="submit">Enviar mensaje</button>
-            </form>
+            <p>Usted se encuentra en: </p>
+            <h2>Contacto</h2>
         </article>
     </main>
+
 
     <footer>
         <p>Copyright &copy; 2025 Clínica Veterinaria Miau. Todos los derechos reservados.</p>
