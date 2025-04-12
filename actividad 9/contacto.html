@@ -1,0 +1,79 @@
+<!-- 
+    Ejercicio 9 - 2
+    Autor: Rafael Serrano Urtecho
+   -->
+
+<!-- 
+ En la página web llamada contacto.html
+a. Se quiere que la página creada anteriormente y ésta estén vinculadas. Para eso incluya un enlace que diga “Volver a la página principal” que lleve a la página principal.html y se abrirá en la misma ventana.
+
+b. Incluya un enlace que permita descargar el CV que está en un archivo pdf y que se abra en una nueva ventana.
+
+c. Incluya un enlace con una dirección de correo electrónico que será “info@trabajador007.com”. El propio enlace debe ser la imagen de un sobre, un buzón, una arroba o algo similar.
+
+d. Se desea que al pulsar el enlace de correo electrónico se envíe un mensaje a la dirección del enlace, con copia a la dirección supervisor@trabajador007.com. Además en el asunto del mensaje debe poner por defecto “Pedir información”.   -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Serrano" />
+    <title>Página de Contacto</title>
+
+</head>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contacto</title>
+    <style>
+        body {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Página de Contacto</h1>
+        <p><a href="principal.html">Volver a la página principal</a></p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Enlaces de Contacto</h2>
+            <ul>
+                <li>
+                    <a href="cv-ejemplo.pdf" target="_blank">Descargar mi CV (PDF)</a>
+                </li>
+                <li>
+                    <a href="mailto:info@trabajador007.com?cc=supervisor@trabajador007.com&subject=Pedir%20información">
+                        <img src="sobre.png" alt="Icono de correo" width="24" height="24">
+                        Contactar por correo electrónico
+                    </a>
+                </li>
+            </ul>
+
+            <p>También puedes contactarnos a través de los siguientes medios:</p>
+            <ul>
+                <li>Teléfono: +34 123 456 789</li>
+                <li>Dirección: Calle Ejemplo, 123, 28001 Madrid</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+
+</html>
