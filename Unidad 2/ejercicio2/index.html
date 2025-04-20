@@ -1,0 +1,88 @@
+<!-- 
+    Ejercicio 2 Unidad 2
+    Autor: Rafael Serrano Urtecho
+
+. Desarrolle una página web que va a tener imágenes.
+
+a. Inserte una imagen de un cangrejo que esté en la carpeta “img” junto a la página web. 
+Deberá incluir un texto alternativo para facilitar su accesibilidad.
+
+b. Debajo de la imagen anterior se debe insertar la misma imagen pero mostrada a un tamaño menor del real.
+
+c. Inserte una imagen de una pelota, que además será un enlace a alguna página web de deportes.
+ La imagen debe ser tomada de internet, utilizando una ruta absoluta.
+
+d. Cite las etiquetas y atributos que son necesarios para insertar
+
+ -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Rafael Serrano Urtecho">
+    <title>Ejercicio 2 Unidad 2</title>
+</head>
+
+<body>
+    <h1>Páginas con imagenes </h1>
+
+    <Section>
+        <h2>1.- Imagen del cangrejo</h2>
+        <img src="img/cangrejo.jpg" alt="Imagen de un cangrejo tamaño real">
+    </Section>
+
+    <Section>
+        <h2>2.- Imagen del cangrejo</h2>
+        <img src="img/cangrejo.jpg" alt="Imagen de un cangrejo tamaño más pequeño que el real" width="200"
+            height="auto">
+    </Section>
+
+    <Section>
+        <h2>3.- Imagen pelota</h2>
+        <a href="https://www.mundodeportivo.com/" target="_blank" rel="noopener noreferrer">
+            <img src="https://plus.unsplash.com/premium_photo-1668032525876-a30c0f987936?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Imagen de una pelota que ademas es un enlace" width="200" height="auto">
+        </a>
+    </Section>
+
+    <section>
+        <h2>Etiquetas y atributos utilizados</h2>
+        <ul>
+            <li>
+                <strong>&lt;img&gt;</strong>: Etiqueta principal para insertar imágenes en HTML.
+            </li>
+            <li>
+                <strong>src</strong>: Atributo que especifica la ruta de la imagen (puede ser relativa o absoluta).
+            </li>
+            <li>
+                <strong>alt</strong>: Atributo que proporciona un texto alternativo para la imagen, importante para
+                accesibilidad.
+            </li>
+            <li>
+                <strong>width</strong> y <strong>height</strong>: Atributos que especifican las dimensiones de la
+                imagen.
+            </li>
+            <li>
+                <strong>&lt;a&gt;</strong>: Etiqueta para crear enlaces.
+            </li>
+            <li>
+                <strong>href</strong>: Atributo que especifica la URL de destino del enlace.
+            </li>
+            <li>
+                <strong>target="_blank"</strong>: Atributo que hace que el enlace se abra en una nueva pestaña.
+            </li>
+            <li>
+                <strong>rel="noopener noreferrer"</strong>: es una combinación de dos atributos HTML que se añaden a
+                enlaces externos para
+                mejorar la seguridad y privacidad. noopener evita que la nueva ventana o pestaña tenga acceso a la
+                página
+                original, y noreferrer impide que el sitio de destino pueda saber de dónde vino el tráfico
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
