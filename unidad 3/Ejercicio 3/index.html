@@ -1,0 +1,108 @@
+<!--Ejercicio 3 unidad 3
+autor: Rafael Serrano Urtecho
+   -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Serrano Urtecho">
+    <title>Ejercicio 3 unidad 3</title>
+</head>
+
+<style>
+    main {
+        background-color: rgb(240, 240, 240);
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        max-width: 1080px;
+        margin: auto;
+    }
+
+    h1 {
+        color: #0000ff;
+        background: #5fff59;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(7, 7, 7, 0.8);
+
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        color: #0000ff;
+        background: #ffffff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(7, 7, 7, 0.8);
+    }
+
+    .resultados {
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+    <main>
+        <section>
+            <h1>Enunciado</h1>
+            <p>
+                Existen varias herramientas online para validar que el contraste de color sea adecuado
+                en una página web. Algunas de estas herramientas para trabajar con el color se pueden
+                encontrar navegando por la web. Para esta actividad se utilizarán la herramienta
+                contrastchecker <a href="https://webaim.org/resources/contrastchecker/">https://webaim.org/resources/contrastchecker/</a> para la
+                actividad 1 y Tawdis <a href="https://www.tawdis.net">https://www.tawdis.net</a> para la actividad 2.</p>
+        </section>
+
+        <section>
+            <h2>Actividad 1</h2>
+            <P>
+                1. Verifique el uso de colores adecuado para que haya suficiente contraste entre el texto y el fondo.
+                Dados los siguientes colores de letras, indique un color para el fondo que tenga suficiente
+                contraste para visualizarse cómodamente.
+                a. 0000ff y 5fff59
+
+                b. 0000ff y ffffff
+
+                c. Para un texto de color azul (1e05ff) proponga un color de fondo donde el contraste sea adecuado.
+            </P>
+            <div>
+                <h2>Resultados</h2>
+                <p>
+                    1. Para el color de letra 
+                         0000ff  y el fondo 5fff59, el contraste es suficiente.</p>
+                <p>
+                    2. Para el color de letra 0000ff y el fondo ffffff, el contraste es suficiente.</p>
+                <p>
+                    3. Para el color de letra 1e05ff, un color de fondo adecuado podría ser ffffff.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Actividad 2</h2>
+            <P>
+                Realiza un test de color a una página web, por ejemplo a la web <a href="http://www.20minutos.es/"> http://www.20minutos.es/</a> y muestra
+                alguno de los errores encontrados.
+            </P>
+
+            <h2>Resultados</h2>
+            <div class="resultados">
+                <img src="img/resumen.png" alt="resumen de el test realizado">
+                <img src="img/operable.png" alt="verificación del sitio de operabilidad">
+                <img src="img/comprensible.png" alt="verificación del sitio de comprensibilidad">
+                <img src="img/perceptible.png" alt="verificación del sitio de perceptibilidad">
+                <img src="img/robusto.png" alt="verificación del sitio de robustez">
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
