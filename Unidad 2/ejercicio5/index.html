@@ -1,0 +1,79 @@
+<!--
+ Ejercicio 5 Unidad 2
+    Autor: Rafael Serrano Urtecho
+
+1. Desarrolle una página web donde se inserte un video de Youtube y también
+ un archivo de audio mp3 que esté en el disco.
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Serrano Urtecho">
+    <title>ejercicio 5 unidad 2</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(1, 1, 50);
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    section {
+        margin: 10px;
+        padding: 20px;
+        background-color: rgb(217, 217, 217);
+        border-radius: 10px;
+    }
+
+    span {
+        color: rgb(58, 58, 58);
+        font-weight: bold;
+    }
+
+    p {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(7, 7, 7, 0.288);
+    }
+</style>
+
+<body>
+    <main>
+        <section>
+            <h1>Video de youtube</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jnSNfNh9o1k?si=PPiuws-WN3lYQYl4"
+                title="Video propio de youtube" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h1>Audio mp3</h1>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <p>
+                <span> Derechos de autor del audio: </span>
+                <br>
+
+                <a
+                    href="https://pixabay.com/es/music/search/musica%20sin%20copyright/">https://pixabay.com/es/music/search/musica%20sin%20copyright/</a>
+            </p>
+    </main>
+</body>
+
+</html>
