@@ -1,0 +1,127 @@
+<!-- 
+Ejercicio 2 - unidad 3
+Autor: Rafael Serrano Urtecho
+
+1. Se desea construir un nuevo sitio web que es una tienda de venta de productos. Determine la arquitectura de la información del sitio web definiendo las categorías necesarias y asignando los productos a cada una de ellas. Represente un mapa del sitio web si se requiere que tenga las siguientes páginas:
+a. Página principal.
+
+b. Página que hable sobre la empresa.
+
+c. Página de contacto.
+
+d. Blog, donde se clasifican los artículos por años, empezando desde el 2012.
+
+e. Tienda donde se venden distintos productos por categorías, defina las categorías necesarias para los siguientes productos: Ordenadores, frigoríficos,libros de cocina, monitores, novelas, impresoras, cómics, tablets, microondas, tostadoras, televisores, freidoras. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Rafael Serrano Urtecho">
+    <title>ejercicio 2 unidad 3</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(3, 2, 19);
+        color: white;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    section {
+        margin: 10px;
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    pre {
+        background: #424242;
+        color: rgb(221, 221, 221);
+        padding: 20px;
+        border-radius: 20px;
+
+    }
+</style>
+
+<body>
+    <main>
+        <section>
+            <h1>Mapa de sitio versión URL</h1>
+            <pre>
+        https://ventadeproductos.com/index.html
+        http://ventadeproductos.com/sobre-la-empresa.html
+        http://ventadeproductos.com/contacto.html
+        http://ventadeproductos.com/blog.html
+        http://ventadeproductos.com/blog/2025.html
+        http://ventadeproductos.com/blog/2024.html
+        http://ventadeproductos.com/blog/2023.html
+        http://ventadeproductos.com/blog/2022.html
+        http://ventadeproductos.com/blog/2021.html
+        http://ventadeproductos.com/blog/2020.html
+        http://ventadeproductos.com/blog/2019.html
+        http://ventadeproductos.com/blog/2018.html
+        http://ventadeproductos.com/blog/2017.html
+        http://ventadeproductos.com/blog/2016.html
+        http://ventadeproductos.com/blog/2015.html
+        http://ventadeproductos.com/blog/2014.html
+        http://ventadeproductos.com/blog/2013.html
+        http://ventadeproductos.com/blog/2012.html
+        http://ventadeproductos.com/tienda.html
+        http://ventadeproductos.com/tienda/electronica.html
+        http://ventadeproductos.com/tienda/electronica/ordenadores.html
+        http://ventadeproductos.com/tienda/electronica/monitores.html
+        http://ventadeproductos.com/tienda/electronica/impresoras.html
+        http://ventadeproductos.com/tienda/electronica/tablets.html
+        http://ventadeproductos.com/tienda/electrodomesticos.html
+        http://ventadeproductos.com/tienda/electrodomesticos/frigorificos.html
+        http://ventadeproductos.com/tienda/electrodomesticos/microondas.html
+        http://ventadeproductos.com/tienda/electrodomesticos/tostadoras.html
+        http://ventadeproductos.com/tienda/electrodomesticos/freidoras.html
+        http://ventadeproductos.com/tienda/electrodomesticos/televisores.html
+        http://ventadeproductos.com/tienda/libros-y-comics.html
+        http://ventadeproductos.com/tienda/libros-y-comics/libros-de-cocina.html
+        http://ventadeproductos.com/tienda/libros-y-comics/novelas.html
+        http://ventadeproductos.com/tienda/libros-y-comics/comics.html
+    </pre>
+        </section>
+        <section>
+            <h1>Mapa de sitio versión CMD</h1>
+            <pre>
+    Página Principal
+    ├── Sobre la empresa
+    ├── Contacto
+    ├── Blog
+    │ └── 2025
+    │ └── 2024
+    │ └── 2023
+    │ └── ...
+    │ └── 2012
+    └── Tienda
+    ├── Electrónica
+    │ ├── Ordenadores
+    │ ├── Monitores
+    │ ├── Impresoras
+    │ └── Tablets
+    ├── Electrodomésticos
+    │ ├── Frigoríficos
+    │ ├── Microondas
+    │ ├── Tostadoras
+    │ ├── Freidoras
+    │ └── Televisores
+    └── Libros y comics
+      ├── Libros de Cocina
+      ├── Novelas
+      └── Cómics
+</pre>
+    </main>
+</body>
+
+</html>
