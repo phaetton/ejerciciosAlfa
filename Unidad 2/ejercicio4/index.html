@@ -1,0 +1,45 @@
+<!--
+ Ejercicio 3 Unidad 2
+    Autor: Rafael Serrano Urtecho
+
+1. Cree un mapa de imagen que sea un cuadrado dividido en cuatro cuadrados de colores.
+ Si se pincha en cada uno de los colores se debe abrir un enlace diferente.
+ -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Serrano Urtecho">
+    <title>Unidad 2 Ejercicio 4</title>
+</head>
+<style>
+    div {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* asignamos el tamaño de la imagen de 400 para que cada cuadrado tenga la medida de 200 */
+    img {
+        width: 400px;
+        height: auto;
+    }
+</style>
+
+<body>
+    <h1>Ejercicio 4 Unidad 2</h1>
+    <p>Mapa de imagen en cuatro cuadrados de colores.</p>
+    <div>
+        <img src="img/mapa.png" alt="Mapa de imagen" usemap="#mapacolores">
+        <map name="mapacolores">
+            <area shape="rect" coords="0,0,200,200" href="https://www.larioja.com/" alt="Rojo"> 
+            <area shape="rect" coords="200,0,400,200" href="https://www.elcorreo.com/" alt="Verde">
+            <area shape="rect" coords="0,200,200,400" href="https://elpais.com/espana/pais-vasco/" alt="Azul">
+            <area shape="rect" coords="200,200,400,400" href="https://www.diariovasco.com/" alt="Amarillo">
+        </map>
+    </div>
+</body>
+</html>
