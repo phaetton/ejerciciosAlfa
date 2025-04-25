@@ -22,12 +22,24 @@
         background-color: aqua;
     }
 
-        footer{
-            display: flex;
-            justify-content:space-evenly;
-            color: white;
-            background-color: black;
-        }
+    header {
+        text-align: center;
+    }
+
+    .columna-1 {
+        background-color: grey;
+    }
+
+    .columna-2 {
+        background-color: darkslategrey;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        background-color: black;
+    }
 </style>
 
 <body>
@@ -38,10 +50,10 @@
         <p>la página se adaptara cuando la resolución de la pantalla sea pequeña</p>
     </header>
     <main>
-        <div>
+        <div class="columna-1">
             este texto está en la columna 1.
         </div>
-        <div>
+        <div class="columna-2">
             este texto está en la columna 2.
         </div>
     </main>
