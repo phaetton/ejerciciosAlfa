@@ -1,0 +1,21 @@
+/* no visitado */
+/* . El color por defecto del enlace sea amarillo con fondo azul. */
+a:link {
+    color: yellow;
+    background-color: blue;
+}
+
+/* visitado */
+/* Cuando un enlace haya sido visitado el enlace aparecerá de color rojo y con fondo blanco. */
+a:visited {
+    color: red;
+    background-color: white;
+}
+
+/* pasar sobre */
+/* Al pasar el ratón por encima el color del enlace sea negro y la letra esté en negrita y el fondo amarillo */
+a:hover {
+    color: black;
+    background-color: yellow;
+    font-weight: bold;
+}
