@@ -1,0 +1,239 @@
+<!-- 
+    Ejercicio 9 - 1 
+    Autor: Rafael Serrano Urtecho
+   -->
+
+<!-- 
+Cree una página web llamada principal.html que contenga distintos tipos de enlaces.
+a. Un enlace dirigirá a la página de Google usando dirección absoluta, la página del enlace se abrirá en una nueva ventana.
+
+b. Inserte una o varias noticias, que tengan varios párrafos, copiadas de alguna página de internet. Incluya al final de la noticia un enlace a la dirección de la fuente original de forma que si se pulsa el enlace se abra en una nueva ventana la noticia en su web original.
+
+c. Inserte un enlace interno que lleve al principio de la página.
+
+d. Inserte un enlace interno que lleve al final de la página.
+
+e. Inserte un enlace que lleve a un archivo de imagen.
+
+f. Inserte un enlace que lleve a otra página web usando dirección relativa. La nueva página se creará en la misma carpeta y se la llamará “contacto.html”. Se desea que se abra en la misma ventana.
+   -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Ejemplos de Enlaces</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #4600a8;
+        }
+
+        article,
+        header {
+            background-color: rgb(235, 255, 188);
+            border-radius: 10px;
+            text-align: justify;
+            margin: 30px 0;
+            padding: 20px;
+        }
+
+        footer {
+            background: #fffd91;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="inicio">
+        <h1>Distintos tipos de enlaces</h1>
+        <div>
+            <p>Navegación rápida:</p>
+            <ul>
+                <li>
+                    <a href="https://www.google.com" target="_blank">Ir a Google (enlace absoluto en nueva ventana)</a>
+                </li>
+
+                <li>
+                    <a href="contacto.html">Página de contacto (enlace relativo)</a>
+                </li>
+
+                <li>
+                    <a href="imagen.jpg">Ver imagen</a>
+                </li>
+
+                <li>Noticias</li>
+
+                <ul>
+                    <li>
+                        <a href="#final" toottip>Ir al final de la página</a>
+                    </li>
+
+                    <li>
+                        <a href="#articulo1" toottip>Cambio Climático</a>
+                    </li>
+
+                    <li>
+                        <a href="#articulo2" toottip>IA revoluciona el desarrollo de software</a>
+                    </li>
+                    <li>
+                        <a href="#articulo3" toottip>Avance en computación cuántica</a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Noticias Recientes</h2>
+
+            <article id="articulo1">
+
+                <h3>España lidera la lucha contra el cambio climático con nuevas medidas</h3>
+
+                <p> El Gobierno español ha anunciado un paquete de medidas ambiciosas para acelerar la transición hacia
+                    una economía baja en carbono y fortalecer la lucha contra el cambio climático. Estas iniciativas
+                    abarcan diversos sectores, desde la energía y el transporte hasta la agricultura y la gestión
+                    forestal, con el objetivo de reducir las emisiones de gases de efecto invernadero y promover la
+                    sostenibilidad.</p>
+
+                <p> Entre las medidas más destacadas se encuentra la aprobación de un nuevo Plan Nacional Integrado de
+                    Energía y Clima (PNIEC), que establece objetivos más ambiciosos para la reducción de emisiones y el
+                    despliegue de energías renovables. El plan prevé alcanzar una cuota del 74% de energías renovables
+                    en el consumo final de energía para 2030, así como una reducción del 23% de las emisiones de gases
+                    de efecto invernadero en comparación con 1990.</p>
+
+                <p> Además, el Gobierno ha anunciado la creación de un Fondo de Transición Justa, dotado con 2.000
+                    millones de euros, para apoyar a las regiones y sectores más afectados por la transición hacia una
+                    economía baja en carbono. Este fondo financiará proyectos de diversificación económica, reconversión
+                    industrial y creación de empleo verde, con el fin de garantizar que nadie se quede atrás en el
+                    proceso de descarbonización.</p>
+
+                <p> En el sector del transporte, se impulsará la movilidad sostenible a través de la electrificación del
+                    parque automovilístico, la mejora del transporte público y el fomento de la movilidad activa, como
+                    el uso de la bicicleta y los desplazamientos a pie. También se promoverán medidas para reducir las
+                    emisiones del transporte marítimo y aéreo, así como para mejorar la eficiencia del transporte de
+                    mercancías.</p>
+
+                <p> En el ámbito de la agricultura y la gestión forestal, se implementarán medidas para promover
+                    prácticas agrícolas sostenibles, reducir las emisiones de gases de efecto invernadero procedentes
+                    del sector y mejorar la gestión de los bosques para aumentar su capacidad de absorción de carbono.
+                </p>
+
+                <p> Estas medidas forman parte del compromiso de España con el Acuerdo de París y la Agenda 2030 para el
+                    Desarrollo Sostenible. El Gobierno español espera que estas iniciativas contribuyan a posicionar a
+                    España como un líder en la lucha contra el cambio climático y a impulsar una transición justa y
+                    sostenible hacia una economía baja en carbono.</p>
+
+                <p> Fuente: <a
+                        href="https://www.miteco.gob.es/es/prensa/ultimas-noticias/espana-lidera-lucha-cambio-climatico-nuevas-medidas/tcm:30-544155"
+                        target="_blank">https://www.miteco.gob.es/es/prensa/ultimas-noticias/espana-lidera-lucha-cambio-climatico-nuevas-medidas/tcm:30-544155</a>
+                </p>
+            </article>
+
+            <article id="articulo2">
+                <h3> Nueva herramienta de IA revoluciona el desarrollo de software</h3>
+
+                <p> Una empresa tecnológica ha lanzado una innovadora herramienta de inteligencia artificial (IA) que
+                    promete transformar la forma en que se desarrolla el software. Esta herramienta, llamada
+                    "CodeGenius",
+                    utiliza algoritmos avanzados de aprendizaje profundo para generar código automáticamente, lo que
+                    permite
+                    a los desarrolladores crear aplicaciones de manera más rápida y eficiente.</p>
+
+                <p> CodeGenius es capaz de comprender el lenguaje natural y convertirlo en código funcional. Los
+                    desarrolladores pueden simplemente describir lo que quieren que haga su aplicación, y la IA generará
+                    el
+                    código correspondiente en cuestión de segundos. Esto elimina la necesidad de escribir código
+                    manualmente, lo que ahorra tiempo y reduce el riesgo de errores.</p>
+
+                <p> Además de generar código, CodeGenius también puede ayudar a los desarrolladores a optimizar el
+                    código
+                    existente. La herramienta analiza el código y sugiere mejoras para hacerlo más eficiente y fácil de
+                    mantener. También puede detectar errores y vulnerabilidades de seguridad, lo que ayuda a garantizar
+                    que
+                    las aplicaciones sean seguras y fiables.</p>
+
+                <p> Los expertos en la industria del software han elogiado CodeGenius por su potencial para revolucionar
+                    el
+                    desarrollo de software. "Esta herramienta podría cambiar las reglas del juego", dijo un analista de
+                    la
+                    industria. "Permitirá a los desarrolladores crear aplicaciones más complejas en menos tiempo, lo que
+                    impulsará la innovación en todos los sectores".</p>
+
+                <p> La empresa que desarrolló CodeGenius planea seguir mejorando la herramienta y agregar nuevas
+                    funciones
+                    en el futuro. El objetivo es convertir a CodeGenius en una plataforma integral para el desarrollo de
+                    software, que pueda utilizarse para crear todo tipo de aplicaciones, desde aplicaciones móviles
+                    hasta
+                    sistemas empresariales.</p>
+
+                <p> Fuente:
+                    <a href="https://www.technologyreview.es/s/15454/nueva-herramienta-de-ia-revoluciona-el-desarrollo-de-software"
+                        target="_blank">https://www.technologyreview.es/s/15454/nueva-herramienta-de-ia-revoluciona-el-desarrollo-de-software</a>
+                </p>
+            </article>
+
+            <article id="articulo3">
+                <h3> Avance histórico en la computación cuántica: Logran nuevo récord de qubits estables</h3>
+
+                <p> Un equipo de científicos ha logrado un hito significativo en el campo de la computación cuántica al
+                    desarrollar
+                    un nuevo método para crear qubits, las unidades básicas de información cuántica, que son
+                    notablemente más
+                    estables y duraderos que los anteriores. Este avance podría acelerar el desarrollo de ordenadores
+                    cuánticos
+                    prácticos, capaces de resolver problemas complejos que están más allá de las capacidades de los
+                    ordenadores
+                    clásicos.</p>
+
+                <p> El principal desafío en la computación cuántica ha sido la fragilidad de los qubits, que son
+                    propensos a errores
+                    debido a la interferencia del entorno. Los investigadores han superado este obstáculo utilizando un
+                    nuevo
+                    material superconductor y una técnica de fabricación innovadora que reduce significativamente la
+                    decoherencia,
+                    el proceso por el cual los qubits pierden su estado cuántico.</p>
+
+                <p> Este nuevo método permite crear qubits que mantienen su coherencia durante períodos de tiempo mucho
+                    más largos,
+                    lo que aumenta la precisión de los cálculos cuánticos. Además, la técnica es escalable, lo que
+                    significa que se
+                    pueden fabricar grandes cantidades de qubits con alta calidad, un requisito crucial para la
+                    construcción de
+                    ordenadores cuánticos a gran escala.</p>
+
+                <p> Los expertos en computación cuántica han calificado este avance como un "hito histórico" y un "paso
+                    importante
+                    hacia la construcción de ordenadores cuánticos prácticos". Se espera que esta nueva tecnología
+                    acelere el
+                    desarrollo de aplicaciones cuánticas en diversos campos, como la medicina, la ciencia de materiales
+                    y la
+                    inteligencia artificial.</p>
+
+                Fuente: <a href=" https://www.nature.com/articles/d41586-023-03606-5" target="_blank">
+                    https://www.nature.com/articles/d41586-023-03606-5</a>
+            </article>
+        </section>
+    </main>
+
+    <footer id="final">
+        <p>
+            <a href="#inicio">Volver arriba</a>
+        </p>
+    </footer>
+</body>
+
+</html>
