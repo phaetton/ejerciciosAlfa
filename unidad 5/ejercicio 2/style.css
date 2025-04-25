@@ -1,0 +1,17 @@
+table {
+    border: 3px solid black;
+}
+
+td {
+    border: 2px solid black;
+}
+
+.primera-celda {
+    color:blue;
+    background-color: yellow;
+}
+
+tr td:last-child {
+    color: red;
+    background-color: grey;
+}
