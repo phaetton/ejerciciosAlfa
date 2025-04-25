@@ -1,0 +1,56 @@
+<!-- 
+    Ejercicio 8 - 1 
+    Autor: Rafael Serrano Urtecho
+   -->
+
+<!-- 
+1. Cree una página web que contenga una tabla con la siguiente distribución de celdas:
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Serrano" />
+    <title>Actividad 8 - 1</title>
+    <style>
+        table {
+            border-top: 2px solid blue;
+            border-left: 2px solid blue;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="padding: 20px;">
+    <h1>Tabla con celdas expandidas</h1>
+    
+    <table>
+        <tr>
+            <th colspan="2">Módulos</th>
+        </tr>
+        <tr>
+            <td rowspan="2">1º Curso</td>
+            <td>Programación</td>
+        </tr>
+        <tr>
+            <td>Bases de Datos</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2º Curso</td>
+            <td>Lenguaje de Marcas</td>
+        </tr>
+        <tr>
+            <td>Implantación de Aplicaciones Web</td>
+        </tr>
+    </table>
+</body>
+</html>
