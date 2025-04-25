@@ -1,0 +1,114 @@
+<!--Ejercicio 4 unidad 3
+autor: Rafael Serrano Urtecho
+   -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Serrano Urtecho">
+    <title>Ejercicio 4 unidad 3</title>
+</head>
+
+<style>
+    main {
+        font-family: Arial, sans-serif;
+        max-width: 1080px;
+        margin: auto;
+    }
+
+    h1 {
+        color: #838383;
+        background: #e6e6e6;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(7, 7, 7, 0.8);
+
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    h2,
+    a {
+        color: #636363;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(7, 7, 7, 0.8);
+    }
+
+    .resultados {
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    a {
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <main>
+        <section>
+            <h1>Enunciado</h1>
+            <p>
+                Cuando se desarrolla una página web es importante tener en cuenta criterios de accesibilidad y
+                usabilidad. Uno de los aspectos más básicos es la elección de colores que contrasten bien y que la
+                página pueda leerse sin problemas.</p>
+        </section>
+
+        <section>
+            <h2>Actividad 1</h2>
+            <P>
+                Utilice herramientas online de validación de la accesibilidad TAW y HERA para comprobar que una página
+                web implementa correctamente las recomendaciones y pautas de accesibilidad web.
+                a. Analice con TAW la página web https://www.google.es/ respecto al estándar WCAG 2.0 y nivel A y
+                muestre los resultados.
+
+                b. Analice con HERA la página web http://www.20minutos.es/ y muestre los resultados.
+            </P>
+            <article>
+                <h2>Resultados test HERA</h2>
+                <p>He buscado en la web la herramienta HERA y el unico indicio de su posible existencia es la página
+                    sidar.org y esta no permite acceso a su información:</p>
+                <div class="resultados">
+                    <img src="img/hera.png" alt="test realizado en HERA">
+                </div>
+            </article>
+            <article>
+                <h2>Resultados test TAW</h2>
+                <p>Resultados del test TAW de la página web https://www.google.es/:</p>
+                <div class="resultados">
+                    <img src="img/taw1.png" alt="test realizado en taw1">
+                    <img src="img/taw2.png" alt="test realizado en taw2">
+                    <img src="img/taw3.png" alt="test realizado en taw3">
+                    <img src="img/taw4.png" alt="test realizado en taw4">
+                    <img src="img/taw5.png" alt="test realizado en taw5">
+                </div>
+            </article>
+            <article>
+                <h2>Resultados test WAVE</h2>
+                <p>Resultados del test WAVE de la página web http://www.20minutos.es/:</p>
+                <div class="resultados">
+                    <img src="img/wave1.png" alt="test realizado en taw1">
+                    <img src="img/wave2.png" alt="test realizado en taw2">
+                    <img src="img/wave3.png" alt="test realizado en taw3">
+                    <img src="img/wave4.png" alt="test realizado en taw4">
+                </div>
+            </article>
+
+            <article>
+                <h2>Otros test</h2>
+            </article>
+            <p>He encontrado otras herramientas de validación de accesibilidad web en el siguiente sitio:</p>
+
+            <a href="   https://didesweb.com/recursos/herramientas-validacion-web/#:~:text=%EE%80%80WAVE%EE%80%81%20es%20un%20servicio
+         ">didesweb.com/recursos/herramientas-validacion-web</a>
+        </section>
+    </main>
+</body>
+
+</html>
