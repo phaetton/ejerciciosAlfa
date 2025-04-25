@@ -1,0 +1,37 @@
+<!-- 
+    Ejercicio 10 - 1 
+    Autor: Rafael Serrano Urtecho
+   -->
+
+<!-- 
+Desarrolla una página web utilizando frames.
+
+a. La estructura de la página será de 2 marcos superiores separados verticalmente y un marco en la parte inferior con barra de desplazamiento siempre activa. Los marcos superiores tendrán 200px de alto y ocupará el 50% del ancho cada uno. El marco inferior ocupará el resto de la página. Los marcos superiores mostrarán las páginas frame1.html y frame2.html, y el marco inferior la página frame3.html. Estos 3 archivos hay que crearlos.
+
+b. Se quiere que los marcos no se puedan cambiar de tamaño.
+
+c. El marco superior izquierdo contendrá una lista con 3 enlaces y al pulsarlos se mostrará el contenido en el marco inferior.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Serrano Urtecho" />
+    <title>Actividad 10 - 1</title>
+   
+</head>
+    <frameset rows="200px,*" border="20" frameborder="1" noresize>
+        <frameset cols="50%,50%" border="0" frameborder="0" noresize>
+            <frame src="frame1.html" name="frame_izquierdo" scrolling="auto" noresize>
+            <frame src="frame2.html" name="frame_derecho" scrolling="auto" noresize>
+        </frameset>
+        <frame src="frame3.html" name="marco_inferior" scrolling="yes" noresize>
+        <noframes>
+            <body>
+                <p>Esta página utiliza frames, pero su navegador no los soporta.</p>
+            </body>
+        </noframes>
+    </frameset>
+</html>
