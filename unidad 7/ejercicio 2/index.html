@@ -7,19 +7,43 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio de formulario</title>
 </head>
+
 <body>
     <form action="enviado.html" method="post" target="_blank">
+        <legend>Datos personales</legend>
         <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" required>
+        <input type="text" name="nombre" autocomplete="off" required>
         <label for="apellidos">apellidos</label>
-        <input type="text" name="apellidos" required>
+        <input type="text" name="apellidos" autocomplete="off" required>
         <label for="email">Email</label>
         <input type="email" name="email" required>
     </form>
+
+    <legend>Encuesta</legend>
+    <form action="" method="post">
+        <label for="puntuacion">¿Qué puntuación darías a esta página?</label>
+        <p>1 es la calificación más mala y 5 la mejor</p>
+        <input type="radio" value="1" name="puntuacion">1
+        <input type="radio" value="2" name="puntuacion">2
+        <input type="radio" value="3" name="puntuacion">3
+        <input type="radio" value="4" name="puntuacion">4
+        <input type="radio" value="5" name="puntuacion">5
+
+        <br>
+        <label for="apartado"> ¿Qué apartados te gustaría añadir a esta página? </label>
+        <input type="checkbox" value="Blog" name="apartado">Blog
+        <input type="checkbox" value="Fotos" name="apartado">Fotos
+        <input type="checkbox" value="Redes Sociales" name="apartado">Redes Sociales
+        <input type="checkbox" value="Música" name="apartado">Música
+        <input type="checkbox" value="Noticias" name="apartado">Noticias
+        <input type="submit" value="enviar" name="enviar"><input type="reset" value="borrar" name="borrar">
+    </form>
 </body>
+
 </html>
