@@ -1,0 +1,13 @@
+
+Especificar en el formulario que es en idioma español.Los datos a enviar son importantes y privados, utilice el método más adecuado para su envío de forma segura.
+Crear los campos de texto “Nombre”, “Apellidos” y el campo de email “Email”.
+Crear etiquetas para los campos anteriores, de forma que si se pincha sobre la etiqueta el campo asociado reciba el foco como si se pinchara sobre él.
+Configurar el campo “Nombre” y “Apellidos” para que tengan desactivado el autocompletado.
+El campo de “Email” será obligatorio (es necesario que el usuario lo rellene o no se podrá enviar el formulario).
+Todos los campos anteriores de datos personales estarán agrupados con la leyenda “Datos Personales”.
+Debajo aparecerá la pregunta “¿Qué puntuación darías a esta página?” y se presentarán varias opciones.Las opciones irán del 1 al 5, siendo el 1 la más mala y el 5 la mejor. Y sólo se podrá marcar una única opción.
+Aparecerá la pregunta “¿Qué apartados te gustaría añadir a esta página?”, y se podrán elegir cualquiera de las opciones siguientes: “Blog, Fotos, Redes Sociales, Música, Noticias”. Se podrán elegir varias opciones simultáneamente.
+Todos los campos anteriores de las 2 preguntas estarán agrupados con la leyenda “Encuesta”.
+El formulario tendrá 2 botones. Un botón de “Enviar” que llevará a la página “enviado.html” donde se mostrará el mensaje "Formulario enviado”. La página se abrirá en una ventana o pestaña nueva.
+También habrá un botón de “Borrar” que borrará todos los datos que estuvieran en el formulario.
+Describa las etiquetas y atributos que aparecen en un formulario, ¿deben estar ordenadas de alguna forma las etiquetas y atributos? ¿Qué atributo debe aparecer obligatoriamente en un formulario para que éste sea funcional?
