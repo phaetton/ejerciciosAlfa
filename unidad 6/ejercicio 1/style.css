@@ -8,3 +8,35 @@ header {
     background-color: maroon;
     text-align: center;
 }
+
+ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background-color: cyan;
+}
+
+li {
+    background-color: khaki;
+    border-style: dashed;
+}
+
+a:hover {
+    color: red;
+}
+
+h2 {
+    background-color: yellow;
+}
+
+article p {
+    background-color: pink;
+}
+
+footer{
+    background-color: maroon;
+    color:white;
+    text-align: center;
+    width: 60%;
+    border-radius: 5px;
+}
