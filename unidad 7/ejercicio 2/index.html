@@ -21,9 +21,10 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     }
 
-    form{
+    form {
         max-width: 600px;
-        margin: 0 auto;;
+        margin: 0 auto;
+        ;
     }
 
     fieldset,
@@ -47,54 +48,67 @@
         background: rgb(249, 255, 197);
     }
 
-    div{
-        margin:10px;
+    .form-group {
+        margin: 10px;
         display: flex;
         flex-direction: column;
-        gap:5px;
+        gap: 5px;
     }
 
-    input{
-        padding:10px;
+    .radio-group,
+    .check-group {
+        display: flex;
+        gap: 20px;
+
     }
 
+    input {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid rgb(76, 0, 255);
+    }
 </style>
 
 <body>
     <form action="enviado.html" method="post" target="_blank" enctype="application/x-www-form-urlencoded">
         <fieldset>
             <legend>Datos personales</legend>
-            <div>
+            <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" autocomplete="off" required>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="apellidos">apellidos</label>
                 <input type="text" name="apellidos" autocomplete="off" required>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" required>
             </div>
         </fieldset>
         <fieldset>
             <legend>Encuesta</legend>
-            <div>
+            <div class="form-group">
                 <label for="puntuacion">¿Qué puntuación darías a esta página?</label>
-                <p>1 es la calificación más mala y 5 la mejor</p>
-                <input type="radio" name="puntuacion" value="1">1
-                <input type="radio" name="puntuacion" value="2">2
-                <input type="radio" name="puntuacion" value="3">3
-                <input type="radio" name="puntuacion" value="4">4
-                <input type="radio" name="puntuacion" value="5">5
+                <small>1 es la calificación más mala y 5 la mejor</small>
+                <div class="radio-group">
+                    <span><input type="radio" name="puntuacion" value="1">1</span>
+                    <span><input type="radio" name="puntuacion" value="2">2</span>
+                    <span><input type="radio" name="puntuacion" value="3">3</span>
+                    <span><input type="radio" name="puntuacion" value="4">4</span>
+                    <span><input type="radio" name="puntuacion" value="5">5</span>
+                </div>
             </div>
-            <div>
+            <div class="form-group">
+
                 <label for="apartado"> ¿Qué apartados te gustaría añadir a esta página? </label>
-                <input type="checkbox" name="apartado" value="Blog">Blog
-                <input type="checkbox" name="apartado" value="Fotos">Fotos
-                <input type="checkbox" name="apartado" value="Redes Sociales">Redes Sociales
-                <input type="checkbox" name="apartado" value="Música">Música
-                <input type="checkbox" name="apartado" value="Noticias">Noticias
+                <div class="check-group">
+                    <span> <input type="checkbox" name="apartado" value="Blog">Blog</span>
+                    <span> <input type="checkbox" name="apartado" value="Fotos">Fotos</span>
+                    <span> <input type="checkbox" name="apartado" value="Redes Sociales">Redes Sociales</span>
+                    <span> <input type="checkbox" name="apartado" value="Música">Música</span>
+                    <span> <input type="checkbox" name="apartado" value="Noticias">Noticias</span>
+                </div>
             </div>
 
         </fieldset>
