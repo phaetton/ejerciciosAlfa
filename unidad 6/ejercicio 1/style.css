@@ -3,6 +3,7 @@
 /* cree la primera regla para darle al fondo de la página un color plata. */
 body {
     margin: 0 auto;
+    padding: 0;
     background-color: silver;
 }
 
@@ -14,6 +15,8 @@ header {
     background-color: maroon;
     /* estará centrado */
     text-align: center;
+
+    padding: 5px;
 }
 
 /* . Las opciones estarán distribuidas de forma horizontal y el menú centrado. Color de fondo del menú cyan claro  */
@@ -22,6 +25,8 @@ nav {
     gap: 10px;
     justify-content: center;
     background-color: cyan;
+
+    padding: 10px 0px;
 }
 
 /* Las opciones no mostrarán el texto subrayado ni ninguna de las características típicas de los enlaces */
@@ -30,6 +35,9 @@ nav a {
     /* color de los botones de opciones khaki. Los botones tendrán un borde punteado. */
     background-color: khaki;
     border-style: dashed;
+
+    padding: 5px;
+    border-radius: 10px 0px;
 }
 
 /* Al pasar el ratón por encima de alguna opción cambiará el color del texto a rojo. */
@@ -39,11 +47,18 @@ a:hover {
 
 h2 {
     background-color: yellow;
+
+    padding: 10px 0px 10px 30px;
+    margin: 0;
 }
 
 article p {
     background-color: pink;
     line-height: 2em;
+
+    padding: 10px;
+    text-align: justify;
+    margin:0;
 }
 
 /* La primera letra del texto tendrá un estilo especial, tendrá tamaño extragrande, color rojo y en negrita. */
@@ -64,5 +79,6 @@ footer {
     color: white;
     text-align: center;
     width: 60%;
+
     border-radius: 5px;
 }
