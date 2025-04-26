@@ -12,37 +12,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio de formulario</title>
+
+    <link rel="stylesheet" href="css/reset.css">
 </head>
+<style>
+    body {
+        background-color: rgb(250, 250, 250);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+
+    form{
+        max-width: 600px;
+        margin: 0 auto;;
+    }
+
+    fieldset,
+    legend {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+    fieldset {
+        background-color: rgb(255, 255, 255);
+        font-size: large;
+    }
+
+    legend {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: rgb(95, 95, 95);
+        background: rgb(249, 255, 197);
+    }
+
+    div{
+        margin:10px;
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+    }
+
+    input{
+        padding:10px;
+    }
+
+</style>
 
 <body>
-    <form action="enviado.html" method="post" target="_blank">
-        <legend>Datos personales</legend>
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" autocomplete="off" required>
-        <label for="apellidos">apellidos</label>
-        <input type="text" name="apellidos" autocomplete="off" required>
-        <label for="email">Email</label>
-        <input type="email" name="email" required>
-    </form>
+    <form action="enviado.html" method="post" target="_blank" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" autocomplete="off" required>
+            </div>
+            <div>
+                <label for="apellidos">apellidos</label>
+                <input type="text" name="apellidos" autocomplete="off" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Encuesta</legend>
+            <div>
+                <label for="puntuacion">¿Qué puntuación darías a esta página?</label>
+                <p>1 es la calificación más mala y 5 la mejor</p>
+                <input type="radio" name="puntuacion" value="1">1
+                <input type="radio" name="puntuacion" value="2">2
+                <input type="radio" name="puntuacion" value="3">3
+                <input type="radio" name="puntuacion" value="4">4
+                <input type="radio" name="puntuacion" value="5">5
+            </div>
+            <div>
+                <label for="apartado"> ¿Qué apartados te gustaría añadir a esta página? </label>
+                <input type="checkbox" name="apartado" value="Blog">Blog
+                <input type="checkbox" name="apartado" value="Fotos">Fotos
+                <input type="checkbox" name="apartado" value="Redes Sociales">Redes Sociales
+                <input type="checkbox" name="apartado" value="Música">Música
+                <input type="checkbox" name="apartado" value="Noticias">Noticias
+            </div>
 
-    <legend>Encuesta</legend>
-    <form action="" method="post">
-        <label for="puntuacion">¿Qué puntuación darías a esta página?</label>
-        <p>1 es la calificación más mala y 5 la mejor</p>
-        <input type="radio" value="1" name="puntuacion">1
-        <input type="radio" value="2" name="puntuacion">2
-        <input type="radio" value="3" name="puntuacion">3
-        <input type="radio" value="4" name="puntuacion">4
-        <input type="radio" value="5" name="puntuacion">5
-
-        <br>
-        <label for="apartado"> ¿Qué apartados te gustaría añadir a esta página? </label>
-        <input type="checkbox" value="Blog" name="apartado">Blog
-        <input type="checkbox" value="Fotos" name="apartado">Fotos
-        <input type="checkbox" value="Redes Sociales" name="apartado">Redes Sociales
-        <input type="checkbox" value="Música" name="apartado">Música
-        <input type="checkbox" value="Noticias" name="apartado">Noticias
-        <input type="submit" value="enviar" name="enviar"><input type="reset" value="borrar" name="borrar">
+        </fieldset>
+        <div>
+            <input type="submit" name="enviar" value="enviar">
+            <input type="reset" value="borrar" name="borrar">
+        </div>
     </form>
 </body>
 
