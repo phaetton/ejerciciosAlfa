@@ -1,5 +1,6 @@
 
-Especificar en el formulario que es en idioma español.Los datos a enviar son importantes y privados, utilice el método más adecuado para su envío de forma segura.
+Especificar en el formulario que es en idioma español.
+Los datos a enviar son importantes y privados, utilice el método más adecuado para su envío de forma segura.
 Crear los campos de texto “Nombre”, “Apellidos” y el campo de email “Email”.
 Crear etiquetas para los campos anteriores, de forma que si se pincha sobre la etiqueta el campo asociado reciba el foco como si se pinchara sobre él.
 Configurar el campo “Nombre” y “Apellidos” para que tengan desactivado el autocompletado.
@@ -11,3 +12,20 @@ Todos los campos anteriores de las 2 preguntas estarán agrupados con la leyenda
 El formulario tendrá 2 botones. Un botón de “Enviar” que llevará a la página “enviado.html” donde se mostrará el mensaje "Formulario enviado”. La página se abrirá en una ventana o pestaña nueva.
 También habrá un botón de “Borrar” que borrará todos los datos que estuvieran en el formulario.
 Describa las etiquetas y atributos que aparecen en un formulario, ¿deben estar ordenadas de alguna forma las etiquetas y atributos? ¿Qué atributo debe aparecer obligatoriamente en un formulario para que éste sea funcional?
+
+
+<!-- 
+<script type="text/javascript">
+
+    function seleccionar(elemento) {
+        campoLabel = elemento.getAttribute("for")//seleccionamos el atributo for del label cliclado
+        campoInput = document.getElementsById(campoLabel);//buscamos el input que cuyo id es el mismo for del label cliclado
+        if (campoInputColeccion.length > 0) { //si el input existe significa que la longitud debe ser mayor que 0
+            campoInput[0].focus(); //ubicamos el foco en el input seleccionado
+        }
+    }
+
+    function enviarformulario(){
+        alert("formulario enviado con exito");
+    }
+</script> -->
