@@ -1,7 +1,8 @@
-
 body {
-    background-color: rgb(250, 250, 250);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    background-image: url(..);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url('../img/gatos.jpg');
+    background-attachment: fixed;
 }
 
 small {
@@ -15,8 +16,13 @@ small {
 
 form {
     max-width: 600px;
-    margin: 0 auto;
-    ;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(250, 250, 250, 0.842);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+
+
 }
 
 fieldset,
@@ -50,8 +56,7 @@ legend {
 .radio-group,
 .check-group {
     display: flex;
-    gap: 20px;
-
+    gap: 20px
 }
 
 input {
@@ -68,4 +73,42 @@ input[type="radio"]:focus,
 input[type="checkbox"]:focus {
     box-shadow: 0px 0px 5px rgb(76, 0, 255);
     border: 1px solid rgb(76, 0, 255);
+}
+
+
+.group-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.group-buttons input {
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.group-buttons input:hover {
+    background: rgb(143, 255, 143);
+}
+
+.group-buttons input:focus {
+    background-color: rgb(16, 46, 216);
+    color: white;
+}
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin: 20px auto;
+    text-align: center;
+    color: blue;
+    font-size: 2em;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.842);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+    border-radius: 10px;
 }
