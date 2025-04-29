@@ -1,0 +1,113 @@
+<!-- 
+ Rafael Serrano Urtecho
+ Maquetación
+ Unidad 1
+ Ejercicio 4
+  -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Tradicional</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <form action="#" method="post">
+        <h1>Formulario Tradicional</h1>
+        <small>los campos con * son de caracter obligatorio</small>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div class="form-group">
+                <label for="dd">D/D#</label>
+                <input type="text" id="dd" name="dd" placeholder="Introduzca su D/D#">
+            </div>
+            <div class="form-group">
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni" placeholder="Introduzca su DNI">
+            </div>
+            <div class="form-group">
+                <label for="domicilio">Domicilio</label>
+                <input type="text" id="domicilio" name="domicilio" placeholder="Introduzca su domicilio">
+            </div>
+            <div class="form-group">
+                <label for="localidad">Localidad</label>
+                <input type="text" id="localidad" name="localidad" placeholder="Introduzca su localidad">
+            </div>
+            <div class="form-group">
+                <label for="cp">Codigo Postal</label>
+                <input type="text" id="cp" name="cp" placeholder="Código postal">
+
+            </div>
+
+            <div class="form-group">
+                <label for="provincia">Provincia</label>
+                <select id="provincia" name="provincia">
+                    <option value="">Seleccione una provincia</option>
+                    <option value="alicante">Alicante</option>
+                    <option value="burgos">Burgos</option>
+                    <option value="guipuzcoa">Guipúzcoa</option>
+                    <option value="leon">León</option>
+                    <option value="madrid">Madrid</option>
+                    <option value="murcia">Murcia</option>
+                    <option value="vizcaya">Vizcaya</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono*</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Introduzca su teléfono">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" name="email" placeholder="Introduzca su correo electrónico">
+            </div>
+            </div>
+        </fieldset>
+
+        <div class="form-section">
+            <h2>SOLICITA <small>(Marque el derecho que desea ejercitar)</small></h2>
+
+            <div class="check-group">
+                <span>
+                    <input type="checkbox" id="acceso" name="acceso" value="acceso">
+                    <label for="acceso">Ejercitar el <strong class="blue">Derecho de Acceso</strong> a sus
+                        datos de
+                        carácter
+                        personal</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="postal" name="envio" value="postal">
+                    <label for="postal">Solicitando que se le remita dicha información a su dirección
+                        postal</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="envio-email" name="envio-email" value="envio-email">
+                    <label for="envio-email">Solicitando que se le remita dicha información a su dirección de correo
+                        electrónico</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="rectificacion" name="rectificacion" value="rectificacion">
+                    <label for="rectificacion">Ejercitar el <strong class="blue">Derecho de
+                            Rectificación</strong> de los
+                        siguientes datos de carácter personal en el sentido que se indica a continuación:</label>
+                </span>
+            </div>
+
+            <textarea id="detalles" name="detalles" rows="3" cols="50"
+                placeholder="Indique los datos a rectificar y la información correcta"></textarea>
+
+                <div class="group-button">
+
+                    <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+                    <button type="reset" class="btn btn-secondary">Limpiar formulario</button>
+                </div>
+    </form>
+
+
+
+</body>
+
+</html>
